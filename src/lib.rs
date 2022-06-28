@@ -46,6 +46,8 @@ fn protect_branch(branch_to_protect: &str) -> () {
             current_branch.on_red(),
             "branch directly.".cyan()
         );
+
+        process::exit(1);
     }
 }
 
